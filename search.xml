@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  <entry>
+    <title><![CDATA[第一篇文章]]></title>
+    <url>%2Fpost%2F%E7%AC%AC%E4%B8%80%E7%AF%87%E6%96%87%E7%AB%A0.html</url>
+    <content type="text"><![CDATA[人的一切痛苦，本质上都是对自己的无能的愤怒。王小波摘自《黄金时代》 文章简介 简介说明 内容开始 开始 Content (md partial supported)primarysuccessinfowarningdanger 有序列表以数字和 . 开始； 数字的序列并不会影响生成的列表序列； 但仍然推荐按照自然顺序（1.2.3…）编写。 &lt;script type="text/javascript" src="https://cdn.bootcss.com/wow/1.1.2/wow.min.js"&gt;&lt;/script&gt; &lt;script&gt; if (!(/msie [6|7|8|9]/i.test(navigator.userAgent)))&#123; new WOW().init(); &#125;;&lt;/script&gt; 百度 删除线icon.png 插入图片控制大小 表格使用 name age LearnShare 12 Mike 32]]></content>
+      <categories>
+        <category>分类1</category>
+        <category>分类2</category>
+        <category>分类3</category>
+      </categories>
+      <tags>
+        <tag>标签1</tag>
+        <tag>标签2</tag>
+        <tag>标签3</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[Hello World]]></title>
+    <url>%2Fpost%2Fhello-world.html</url>
+    <content type="text"><![CDATA[Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick StartCreate a new post$ hexo new "My New Post" More info: Writing Run server$ hexo server More info: Server Generate static files$ hexo generate More info: Generating Deploy to remote sites$ hexo deploy More info: Deployment]]></content>
+  </entry>
+</search>
