@@ -132,10 +132,10 @@
 <meta property="og:type" content="article">
 <meta property="og:title" content="使用HEXO搭建博客">
 <meta property="og:url" content="http://sunxlong.github.io/post/first-page.html">
-<meta property="og:site_name" content="孙小龙">
+<meta property="og:site_name" content="孙小龙的个人博客">
 <meta property="og:description" content="简要介绍下Hexo搭建博客的相关知识，主要内容如下  Hexo的安装、使用、发布 NexT主题安装与配置 Hexo优化">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2017-11-06T07:42:41.906Z">
+<meta property="og:updated_time" content="2017-11-06T13:44:43.216Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="使用HEXO搭建博客">
 <meta name="twitter:description" content="简要介绍下Hexo搭建博客的相关知识，主要内容如下  Hexo的安装、使用、发布 NexT主题安装与配置 Hexo优化">
@@ -174,7 +174,7 @@
 
 
 
-  <title>使用HEXO搭建博客 | 孙小龙</title>
+  <title>使用HEXO搭建博客 | 孙小龙的个人博客</title>
   
 
 
@@ -214,12 +214,12 @@
     <div class="custom-logo-site-title">
       <a href="/"  class="brand" rel="start">
         <span class="logo-line-before"><i></i></span>
-        <span class="site-title">孙小龙</span>
+        <span class="site-title">孙小龙的个人博客</span>
         <span class="logo-line-after"><i></i></span>
       </a>
     </div>
       
-        <p class="site-subtitle">做人不卖萌跟咸鱼有什么区别</p>
+        <p class="site-subtitle">做人不卖萌跟咸鱼有什么区别.</p>
       
   </div>
 
@@ -364,7 +364,7 @@
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="孙小龙">
+      <meta itemprop="name" content="孙小龙的个人博客">
     </span>
 
     
@@ -394,6 +394,39 @@
             
           </span>
 
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/项目/" itemprop="url" rel="index">
+                    <span itemprop="name">项目</span>
+                  </a>
+                </span>
+
+                
+                
+                  ， 
+                
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/项目/代码/" itemprop="url" rel="index">
+                    <span itemprop="name">代码</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
           
 
           
@@ -451,8 +484,8 @@
 </li>
 </ul>
 <h2 id="安装HEXO"><a href="#安装HEXO" class="headerlink" title="安装HEXO"></a>安装HEXO</h2><figure class="highlight stata"><table><tr><td class="code"><pre><div class="line">npm install hexo-<span class="keyword">cli</span> -<span class="keyword">g</span> <span class="comment">//下载hexo包  </span></div><div class="line">hexo init blog <span class="comment">//初始化一个博客项目，项目名称叫blog  </span></div><div class="line"><span class="keyword">cd</span> blog	 </div><div class="line">npm install <span class="comment">//安装依赖  &lt;br&gt;</span></div><div class="line">hexo server <span class="comment">//启动http服务，预览项目</span></div></pre></td></tr></table></figure>
-<p>用浏览器打开 <a href="http://localhost:4000/" target="_blank" rel="external">http://localhost:4000/</a> 或者 <a href="http://127.0.0.1:4000/就能看到网页了" target="_blank" rel="external">http://127.0.0.1:4000/就能看到网页了</a><br>推荐使用现代化浏览器(Chrome)获得最佳效果</p>
-<p>按 Ctrl+C 停止本地预览服务</p>
+<p>用浏览器打开 <code>http://localhost:4000/</code> 或者 <code>http://127.0.0.1:4000/</code>就能看到网页了<br>推荐使用现代化浏览器<code>(Chrome)</code>获得最佳效果</p>
+<p>按 <code>Ctrl+C</code> 停止本地预览服务</p>
 <h1 id="使用"><a href="#使用" class="headerlink" title="使用"></a>使用</h1><h2 id="hexo的目录结构"><a href="#hexo的目录结构" class="headerlink" title="hexo的目录结构"></a>hexo的目录结构</h2><figure class="highlight haxe"><table><tr><td class="code"><pre><div class="line">.</div><div class="line">├── .deploy       <span class="meta">#需要部署的文件</span></div><div class="line">├── node_modules  <span class="meta">#Hexo插件</span></div><div class="line">├── <span class="keyword">public</span>        <span class="meta">#生成的静态网页文件</span></div><div class="line">├── scaffolds     <span class="meta">#模板</span></div><div class="line">├── source        <span class="meta">#博客正文和其他源文件, 404 favicon CNAME 等都应该放在这里</span></div><div class="line">|   ├── _drafts   <span class="meta">#草稿</span></div><div class="line">|   └── _posts    <span class="meta">#文章</span></div><div class="line">├── themes        <span class="meta">#主题</span></div><div class="line">├── _config.yml   <span class="meta">#全局配置文件</span></div><div class="line">└── <span class="keyword">package</span>.json</div></pre></td></tr></table></figure>
 <h2 id="全局配置-config-yml"><a href="#全局配置-config-yml" class="headerlink" title="全局配置_config.yml"></a>全局配置_config.yml</h2><p>配置文件的冒号’:’后面有空格</p>
 <figure class="highlight yaml"><table><tr><td class="code"><pre><div class="line"><span class="comment"># Site #站点信息</span></div><div class="line"><span class="attr">title:</span> <span class="string">lmintlcx</span> <span class="comment">#标题</span></div><div class="line"><span class="attr">subtitle:</span> <span class="string">做人不卖萌跟咸鱼有什么区别</span> <span class="comment">#副标题</span></div><div class="line"><span class="attr">description:</span> <span class="string">lmintlcx</span> <span class="string">lm</span> <span class="string">lcx</span> <span class="string">blog</span> <span class="comment">#描述</span></div><div class="line"><span class="attr">author:</span> <span class="string">lmintlcx</span> <span class="comment">#作者</span></div><div class="line"><span class="attr">language:</span> <span class="string">zh-Hans</span> <span class="comment">#语言</span></div><div class="line"><span class="attr">timezone:</span> <span class="string">Asia/Shanghai</span> <span class="comment">#时区</span></div><div class="line"><span class="comment"># URL #链接格式</span></div><div class="line"><span class="attr">url:</span> <span class="attr">http://blog.lmintlcx.com</span> <span class="comment">#网址</span></div><div class="line"><span class="attr">root:</span> <span class="string">/</span> <span class="comment">#根目录</span></div><div class="line"><span class="attr">permalink:</span> <span class="string">post/:title.html</span> <span class="comment">#文章的链接格式</span></div><div class="line"><span class="attr">permalink_defaults:</span></div><div class="line"><span class="comment"># Directory #目录</span></div><div class="line"><span class="attr">source_dir:</span> <span class="string">source</span> <span class="comment">#源文件</span></div><div class="line"><span class="attr">public_dir:</span> <span class="string">public</span> <span class="comment">#生成的网页文件</span></div><div class="line"><span class="attr">tag_dir:</span> <span class="string">tags</span> <span class="comment">#标签</span></div><div class="line"><span class="attr">archive_dir:</span> <span class="string">archives</span> <span class="comment">#归档</span></div><div class="line"><span class="attr">category_dir:</span> <span class="string">categories</span> <span class="comment">#分类</span></div><div class="line"><span class="attr">code_dir:</span> <span class="string">downloads/code</span></div><div class="line"><span class="attr">i18n_dir:</span> <span class="string">:lang</span> <span class="comment">#国际化</span></div><div class="line"><span class="attr">skip_render:</span></div><div class="line"><span class="comment"># Writing #写作</span></div><div class="line"><span class="attr">new_post_name:</span> <span class="string">:title.md</span> <span class="comment">#新文章标题</span></div><div class="line"><span class="attr">default_layout:</span> <span class="string">post</span> <span class="comment">#默认模板(post page photo draft)</span></div><div class="line"><span class="attr">titlecase:</span> <span class="literal">false</span> <span class="comment">#标题转换成大写</span></div><div class="line"><span class="attr">external_link:</span> <span class="literal">true</span> <span class="comment">#新标签页里打开连接</span></div><div class="line"><span class="attr">filename_case:</span> <span class="number">0</span></div><div class="line"><span class="attr">render_drafts:</span> <span class="literal">false</span></div><div class="line"><span class="attr">post_asset_folder:</span> <span class="literal">false</span></div><div class="line"><span class="attr">relative_link:</span> <span class="literal">false</span></div><div class="line"><span class="attr">future:</span> <span class="literal">true</span></div><div class="line"><span class="attr">highlight:</span> <span class="comment">#语法高亮</span></div><div class="line"><span class="attr">  enable:</span> <span class="literal">true</span></div><div class="line"><span class="attr">  line_number:</span> <span class="literal">false</span> <span class="comment">#显示行号</span></div><div class="line"><span class="attr">  auto_detect:</span> <span class="literal">true</span></div><div class="line"><span class="attr">  tab_replace:</span></div><div class="line"><span class="comment"># Category &amp; Tag #分类和标签</span></div><div class="line"><span class="attr">default_category:</span> <span class="string">uncategorized</span> <span class="comment">#默认分类</span></div><div class="line"><span class="attr">category_map:</span></div><div class="line"><span class="attr">tag_map:</span></div><div class="line"><span class="comment"># Date / Time format #日期时间格式</span></div><div class="line"><span class="comment">## http://momentjs.com/docs/#/displaying/format/</span></div><div class="line"><span class="attr">date_format:</span> <span class="string">YYYY-MM-DD</span></div><div class="line"><span class="attr">time_format:</span> <span class="attr">HH:mm:ss</span></div><div class="line"><span class="comment"># Pagination #分页</span></div><div class="line"><span class="attr">per_page:</span> <span class="number">20</span> <span class="comment">#每页文章数, 设置成 0 禁用分页</span></div><div class="line"><span class="attr">pagination_dir:</span> <span class="string">page</span></div><div class="line"><span class="comment"># Extensions #插件和主题</span></div><div class="line"><span class="comment">## 插件: http://hexo.io/plugins/</span></div><div class="line"><span class="comment">## 主题: http://hexo.io/themes/</span></div><div class="line"><span class="attr">theme:</span> <span class="string">next</span></div><div class="line"><span class="comment"># Deployment #部署, lmintlcx是我的用户名, 同时发布在 GitHub 和 GitCafe 上面</span></div><div class="line"><span class="attr">deploy:</span></div><div class="line"><span class="attr">  type:</span> <span class="string">git</span></div><div class="line"><span class="attr">  repo:</span> </div><div class="line"><span class="attr">    github:</span> <span class="attr">https://github.com/lmintlcx/lmintlcx.github.io.git,master</span></div><div class="line"><span class="attr">    gitcafe:</span> <span class="attr">https://gitcafe.com/lmintlcx/lmintlcx.git,gitcafe-pages</span></div><div class="line"><span class="comment"># Disqus #Disqus评论系统</span></div><div class="line"><span class="attr">disqus_shortname:</span> </div><div class="line"><span class="attr">plugins:</span> <span class="comment">#插件，例如生成 RSS 和站点地图的</span></div><div class="line"><span class="bullet">-</span> <span class="string">hexo-generator-feed</span></div><div class="line"><span class="bullet">-</span> <span class="string">hexo-generator-sitemap</span></div></pre></td></tr></table></figure>
@@ -468,7 +501,7 @@
 <h3 id="编辑文章"><a href="#编辑文章" class="headerlink" title="编辑文章"></a>编辑文章</h3><figure class="highlight actionscript"><table><tr><td class="code"><pre><div class="line">hexo <span class="keyword">new</span> <span class="string">"标题"</span> 或者 hexo n 标题</div></pre></td></tr></table></figure>
 <p>在_posts目录下会生成文件 标题.md</p>
 <figure class="highlight yaml"><table><tr><td class="code"><pre><div class="line"><span class="attr">title:</span> <span class="string">标题</span></div><div class="line"><span class="attr">date:</span> <span class="number">2015</span><span class="bullet">-09</span><span class="bullet">-20</span> <span class="number">13</span><span class="string">:18:46</span></div><div class="line"><span class="attr">tags:</span></div><div class="line"><span class="bullet">-</span> <span class="string">标签1</span></div><div class="line"><span class="bullet">-</span> <span class="string">标签2</span></div><div class="line"><span class="bullet">-</span> <span class="string">标签3</span></div><div class="line"><span class="attr">categories:</span> <span class="string">[分类1,分类2,分类3]</span></div><div class="line"><span class="meta">---</span></div><div class="line"><span class="string">正文,</span> <span class="string">使用</span> <span class="string">Markdown</span> <span class="string">语法书写</span></div></pre></td></tr></table></figure>
-<p>编辑完成后保存，hexo server 预览</p>
+<p>编辑完成后保存，<code>hexo server</code> 预览</p>
 <h2 id="发布"><a href="#发布" class="headerlink" title="发布"></a>发布</h2><p>可以部署到GitHub或Coding<br>发布到GitHub 项目主页需要把 branch 设置为 gh-pages</p>
 <figure class="highlight less"><table><tr><td class="code"><pre><div class="line"><span class="attribute">deploy</span>:</div><div class="line">  <span class="attribute">type</span>: github</div><div class="line">  <span class="attribute">repo</span>: <span class="attribute">https</span>:<span class="comment">//github.com/git-lt/blog.git</span></div><div class="line">  <span class="attribute">branch</span>: master</div></pre></td></tr></table></figure>
 <p>或者发布到Coding</p>
@@ -477,7 +510,7 @@
 <figure class="highlight ebnf"><table><tr><td class="code"><pre><div class="line"><span class="attribute">hexo deploy</span></div></pre></td></tr></table></figure>
 <p>出现以下提示说明部署成功</p>
 <figure class="highlight routeros"><table><tr><td class="code"><pre><div class="line">[<span class="builtin-name">info</span>] Deploy done: github</div></pre></td></tr></table></figure>
-<p>在浏览器输入localhost:4000即可访问刚刚新创建的博客  </p>
+<p>在浏览器输入<code>localhost:4000</code>即可访问刚刚新创建的博客  </p>
 
       
     </div>
@@ -539,7 +572,7 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/post/第一篇文章.html" rel="next" title="黄金时代">
+              <a href="/post/test.html" rel="next" title="黄金时代">
                 <i class="fa fa-chevron-left"></i> 黄金时代
               </a>
             
@@ -548,6 +581,10 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
+            
+              <a href="/post/blog-02.html" rel="prev" title="一个前端的自我修养（转）">
+                一个前端的自我修养（转） <i class="fa fa-chevron-right"></i>
+              </a>
             
           </div>
         </div>
@@ -629,7 +666,7 @@
                 alt="孙小龙" />
             
               <p class="site-author-name" itemprop="name">孙小龙</p>
-              <p class="site-description motion-element" itemprop="description">静坐常思己过，闲谈莫论人生。#描述</p>
+              <p class="site-description motion-element" itemprop="description">静坐常思己过,闲谈莫论人生.</p>
           </div>
 
           <nav class="site-state motion-element">
@@ -639,7 +676,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">3</span>
+                  <span class="site-state-item-count">4</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -650,7 +687,7 @@
               
               <div class="site-state-item site-state-categories">
                 <a href="/categories/index.html">
-                  <span class="site-state-item-count">2</span>
+                  <span class="site-state-item-count">4</span>
                   <span class="site-state-item-name">分类</span>
                 </a>
               </div>
