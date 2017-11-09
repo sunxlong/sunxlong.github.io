@@ -1,0 +1,83 @@
+﻿# Site #站点信息
+title: Sun XiaoLong's Blog #标题
+subtitle: 做人不卖萌跟咸鱼有什么区别。
+description: 静坐常思己过,闲谈莫论人生。
+author: Sun XiaoLong #作者
+language: zh-Hans #语言
+timezone: Asia/Shanghai #时区
+# URL #链接格式
+url: http://sunxlong.github.io #网址
+root: / 
+permalink: post/:title.html #文章的链接格式
+permalink_defaults:
+# Directory #目录
+source_dir: source #源文件
+public_dir: public #生成的网页文件
+tag_dir: tags #标签
+archive_dir: archives #归档
+category_dir: categories #分类
+code_dir: downloads/code
+i18n_dir: :lang #国际化
+skip_render:
+# Writing #写作
+new_post_name: :title.md #新文章标题
+default_layout: post #默认模板(post page photo draft)
+titlecase: false #标题转换成大写
+external_link: true #新标签页里打开连接
+filename_case: 0
+render_drafts: false
+post_asset_folder: false
+relative_link: false
+future: true
+highlight: #语法高亮
+  enable: true
+  line_number: false #显示行号
+  auto_detect: true
+  tab_replace: true
+# Category & Tag #分类和标签
+default_category: uncategorized #默认分类
+category_map:
+tag_map:
+# Date / Time format #日期时间格式
+## http://momentjs.com/docs/#/displaying/format/
+date_format: YYYY-MM-DD
+time_format: HH:mm:ss
+# Pagination #分页
+per_page: 20 #每页文章数, 设置成 0 禁用分页
+pagination_dir: page
+# Extensions #插件和主题
+## 插件: http://hexo.io/plugins/
+
+#local Search
+search:
+  path: search.xml
+  field: post
+  format: html
+  limit: 10000
+
+#algolia:
+  #applicationID: BCASQXYGMK
+  #apiKey: a4f459cad95c3fd207d74ea611b0abc0
+  #adminApiKey: 7f42c663c0299777711f14276c2dcae9
+  #indexName: da50aa6374ca99e46d0ae884185c04fb
+  #chunkSize: 5000
+
+favicon: /favicon.ico #网站图标
+#language: zh-Hans #繁体：zh-hk/zh-tw 英语：en
+# 标题
+links_title: 友情链接
+# 链接
+links:
+  Hexo: http://hexo.io/
+  Github: http://github.com/
+  
+## 主题: http://hexo.io/themes/
+theme: #anisina
+       next
+# Deployment #部署, lmintlcx是我的用户名, 同时发布在 GitHub 和 GitCafe 上面
+deploy:
+  type: git
+  repo: git@github.com:sunxlong/sunxlong.github.io.git
+  #https://sunxiaolong:njkm79556@git.coding.net/sunxiaolong/sunxiaolong.git
+  branch: master
+  
